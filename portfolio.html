@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+	<script src="js/jquery-3.2.1.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<title>My Portfolio</title>
+</head>
+<body class="container">
+	<header class="row header hr-rule">
+		<figure class="col-md-1">
+			<img src="img/udacity.svg" class="img-responsive header-logo" alt="Udacity logo">
+		</figure>
+
+		<div class="text-uppercase text-right col-md-11">
+			<h1>mishu goyal</h1>
+        	<h4 class="bold">full stack web developer</h4>
+		</div>
+	</header>
+
+	<main>
+		<div class="row">
+			<figure class="col-md-12">
+				<img src="img/fullstack1.jpg" class="img-responsive role-image" alt="Full stack developement">
+			</figure>
+		</div>
+
+		<section class="row">
+			<div class="col-md-12">
+				<h2 class="work-header bold">Featured Work</h2>
+			</div>
+
+			<!-- TODO: add other work -->
+			<article class="col-md-4">
+				<img src="img/movietrailer.png" class="img-responsive" alt="Movie trailer website" data-toggle="modal" data-target="#project1">
+          		<h3 class="text-center">Movie Trailer Website</h3>
+          		<p><a href="https://github.com/mgoyal123/ud036_StarterCode" target="_blank">https://github.com/mgoyal123/ud036_StarterCode</a></p>
+			</article>
+
+			<article class="col-md-4">
+				<img src="img/navigation1.png" class="img-responsive" alt="Moving Companion website" data-toggle="modal" data-target="#project2">
+          		<h3 class="text-center">Moving Companion</h3>
+          		<p><a href="https://github.com/mgoyal123/Moving-companion" target="_blank">https://github.com/mgoyal123/Moving-companion</a></p>
+			</article>
+
+			<article class="col-md-4">
+				<img src="img/resume.png" alt="Online Resume" class="img-responsive" data-toggle="modal" data-target="#project3">
+          		<h3 class="text-center">Resume</h3>
+          		<p><a href="https://github.com/mgoyal123/frontend-nanodegree-resume" target="_blank">https://github.com/mgoyal123/frontend-nanodegree-resume</a></p>
+			</article>
+		</section>
+
+	<!-- Modals -->
+	    <aside class="modal fade" id="project1">
+	        <div class="modal-dialog modal-content">
+	            <header class="modal-header">
+	                <h3 class="modal-title">My Favorite Project</h3>
+	            </header>
+	             <div class="modal-body">
+	                <img class="img-responsive" src="img/movietrailer2.png" alt="Movie trailer website">
+	                <p>This was my first project in this class. I learned about HTML and Python. This site is
+	                dynamically generating from python code which is calling an API for movies data.</p>
+	            </div>
+	            <footer class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	            </footer>
+	        </div>
+	    </aside>
+	    <aside class="modal fade" id="project2">
+	        <div class="modal-dialog modal-content">
+	            <header class="modal-header">
+	                <h3 class="modal-title">Moving Companion Website</h3>
+	            </header>
+	            <div class="modal-body">
+	                <img class="img-responsive" src="img/navigation2.png" alt="Moving Companion website">
+	                <p>This site is based on javascript and HTML. It displays the background image, wikipedia
+	                article links and news related to the place entered by user.</p>
+	            </div>
+	            <footer class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	            </footer>
+	        </div>
+	    </aside>
+	    <aside class="modal fade" id="project3">
+	        <div class="modal-dialog modal-content">
+	            <header class="modal-header">
+	                <h3 class="modal-title">Online Resume</h3>
+	            </header>
+	            <div class="modal-body">
+	                <img class="img-responsive" src="img/resume.png" alt="Resume screenshot">
+	                <p>This is an online resume which is dynamically generating from javascripts files.</p>
+	            </div>
+	            <footer class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	            </footer>
+	        </div>
+	    </aside>
+   	</main>
+</body>
+</html>
